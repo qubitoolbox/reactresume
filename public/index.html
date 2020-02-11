@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!--BRAG ABOUT THE FACT THAT YOU DECODED HERTZ CHALLENGE-->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lemonada&effect=shadow-multiple|3d|anaglyph|fire-animation|Vollkorn|comfortaa">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Import the data file -->
+  <script src="data.js" type="module"></script>
+
+  <!-- Import the main script file -->
+  <script src="script.js" type="module"></script>
+
+
+    <style>
+      .coniomen{
+
+        font-family: Lemonada;
+
+      }
+      .introfont {
+        font-family: Comfortaa;
+        font-size: 18px;
+      }
+      .ciniomen{
+        font-family: Vollkorn;
+        color:maroon;
+        font-size: 36px;
+        text-align: center;
+        margin-top:-156px;
+        
+      }
+
+      .coloe1{
+
+        background-color: orange;
+      }
+
+      .elmargen{
+        margin-top: 30px;
+
+      }
+
+      .loscharts{
+        background-color:lawngreen;
+      }
+      .textincreased{
+        font-size: 22px;
+      }
+
+      .thecontainer{
+        background: #fff;
+        border-radius: 2px;
+        display: inline-block;
+        height: 300px;
+        margin-left: 400px;
+        position: relative;
+        width: 500px;
+      }
+      .thecontainercard {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      }
+
+      .listmargin{
+        margin-right: 110px;
+      }
+
+
+    </style>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="toor"></div>
+    <div id="root"></div>
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+        <canvas id="ct-chart"></canvas>
+      </div>
+        <div class="col-md-6">
+          <canvas id="ct-chartt"></canvas>
+        
+        </div>
+      </div>
+    </div>
+    <div id="nextdiv" clas="sr-only sr-only-focusable"></div>
+    <div id="referenceitems"></div>
+
+    <!--<div class="text-center font-effect-fire-animation font-effect-3d coniomen elmargen"><h1>My Goal</h1></div>-->
+    <div id="tableofitems" className="elmargen"></div>
+    <div class="text-center font-effect-fire-animation font-effect-3d coniomen" ><h1>Source Code for This Page</h1></div>
+    <div class="text-center "><a class="elmargen" href="https://github.com/qubitoolbox/reactresume">git Repo</a></div>
+    <div class="container max-auto elmargen">
+      <style type="text/css">
+        .gist {width:444px !important;}
+        .gist-file
+        .gist-data {max-height: 140px;max-width: 444px;}
+      </style>
+      <div class="row">
+        <div class="col-sm-5 mx-auto bg-danger" >
+          <div class="card">
+            <script src="https://gist.github.com/qubitoolbox/67c8336fab09bc8602c0581478f180f8.js"></script>
+          </div>
+        </div>
+        <div class="col-sm-5 bg-warning" >
+          <div class="card">
+            <script src="https://gist.github.com/qubitoolbox/6c791d636e4796bcdb66d0502e5567ad.js"></script>
+          </div>
+        </div>
+        <div class="col-sm-5 mx-auto bg-secondary" >
+          <div class="card">
+            <script src="https://gist.github.com/qubitoolbox/1220c2ed2c3e847646b6b05557a73dbb.js"></script>
+          </div>
+        </div>
+        <div class="col-sm-5 bg-primary">
+          <div class="card">
+            <script src="https://gist.github.com/qubitoolbox/06aff0b22bb9057eb50419768d1c10ae.js"></script>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 mx-auto bg-dark" >
+            <div class="card">
+              <script src="https://gist.github.com/qubitoolbox/16603c3d9e5606d6bbd2b1e40d2d9e17.js"></script>
+            </div>
+          </div>
+          <div class="col-sm-5 bg-success" >
+            <div class="card">
+              <script src="https://gist.github.com/qubitoolbox/ac783adff645adf935af16340800b306.js"></script>
+            </div>
+          </div>
+          </div>
+        
+    <div class="text-center font-effect-fire-animation font-effect-3d coniomen elmargen"><h1>Machine Learning Skills</h1></div>
+    <div id="perdiv"></div>
+    <!--
+    <div class="container-fluid elmargen" style="margin-right: -11em;">
+      <p class="text-secondary textincreased"> And <b>Lastly</b>, a quick look of how Good BlockChain continues doing</p>
+      <div class="btcwdgt-chart" bw-cash="true" bw-noshadow="true"></div>
+
+    </div>-->
+
+  <script type="text/javaScript">
+        var data = {
+        labels: ['Advanced Networking', 'Containerization', 'Machine Learning', 'Big Data', 'Azure'],
+        series: [1, 2, 3, 4, 5]
+      };
+
+        var options = {
+          labelInterpolationFnc: function(value) {
+          return value[0]
+        },
+        width: 400,
+        height: 400
+      };
+
+      var responsiveOptions = [
+        ['screen and (min-width: 640px)', {
+          chartPadding: 0,
+          labelOffset: 100,
+          labelDirection: 'explode',
+          labelInterpolationFnc: function(value) {
+            return value;
+          }
+        }],
+        ['screen and (min-width: 1024px)', {
+          labelOffset: 0,
+          chartPadding: 20
+        }]
+      ];
+
+      new Chartist.Pie('.ct-cha', data, options, responsiveOptions);
+  
+  
+  </script>
+  <script type="text/javascript">
+      var ctx = document.getElementById('ct-chart').getContext('2d');
+      new Chart(ctx, {
+          data: data = {
+            datasets: [{
+                data: [1.1, 2.3, 3.5, 4.7, 5.11, 6.13, 7.17,8.19,9.23]
+            }],
+
+            // These labels appear in the legend and in the tooltips when hovering different arcs
+            labels: [
+              'Advanced Networking', 
+              'Containerization', 
+              'Machine Learning', 
+              'Big Data', 
+              'Azure',
+              'Google Cloud',
+              'aws',
+              'Java',
+              'python'
+            ]
+        },
+          type: 'polarArea',
+          options: options
+      });
+
+
+
+  </script>
+  <script>
+
+    var ctx = document.getElementById('ct-chartt').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+            datasets: [{
+                label: 'Learning to Code Journey',
+                backgroundColor: 'rgb(13, 55, 51, 0.4)',
+                hoverBackgroundColor:'rgb(43, 95, 91, 0.9)',
+                borderColor: 'rgb(25, 9, 12)',
+                data: [0, 1, 0.4, 2.7, 3.8, 4.10, null]
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
+
+
+  </script>
+  <script>
+    (function(b,i,t,C,O,I,N) {
+      window.addEventListener('load',function() {
+        if(b.getElementById(C))return;
+        I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+        I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+      },false)
+    })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+  </script>
+  
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
